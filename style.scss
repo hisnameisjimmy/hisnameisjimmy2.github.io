@@ -14,25 +14,31 @@
 /**************/
 
 html {
+  box-sizing: border-box;
   font-size: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background: $blue;
+  font: 18px/1.4 $openSans;
+  color: $white;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 760px;
   width: 100%;
+  @include mobile {
+    padding: 0 10px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: $openSans;
+  color: $white;
   font-weight: bold;
 
   line-height: 1.7;
@@ -42,6 +48,19 @@ h1, h2, h3, h4, h5, h6 {
   @include mobile {
     line-height: 1.4;
   }
+}
+
+.blog-post-title, .front-page-content h1 {
+  opacity: .6;
+  font-size: 22px;
+}
+
+.front-page-content p {
+  opacity: .8;
+}
+
+.front-page-content h1:hover {
+  opacity: 1;
 }
 
 h1 {
@@ -66,14 +85,18 @@ h4 {
 
 p {
   margin: 15px 0;
+  color: $white;
+  opacity: .9;
+  max-width: 600px;
 }
 
 a {
-  color: $blue;
+  color: $red;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $white;
+    opacity: 1;
   }
 }
 
@@ -107,7 +130,13 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
+  max-width: 120%;
+  margin: 20px 0;
+  margin-left: -10%;
+  @include mobile {
+    max-width: 100%;
+    margin-left: auto;
+  }
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -117,7 +146,8 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $white;
+  opacity: .5;
 }
 
 // Specify the color of the selection
@@ -156,7 +186,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  // border-bottom: 1px solid $darkerBlue;
 
   @include mobile {
     text-align: center;
@@ -190,20 +220,41 @@ img {
   }
 }
 
+.site-info h1 {
+  margin: 0;
+}
+
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $red;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-family: $nunitoSans;
   letter-spacing: 1px;
 }
 
+.site-name.mod-first {
+  font-weight: 700;
+  font-size: 28px;
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.site-name.mod-second {
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 100px;
+  margin-left: -8px;
+  @include mobile {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
+  color: $red;
   font-size: 16px;
+  opacity: .8;
 
   @include mobile {
     margin: 3px 0;
@@ -211,10 +262,11 @@ img {
 }
 
 nav {
-  float: right;
+  float: left;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  font-family: $nunitoSans;
+  font-size: 16px;
+  opacity: .7;
 
   @include mobile {
     float: none;
@@ -225,14 +277,16 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $red;
     text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $red;
+      
     }
   }
 }
@@ -243,7 +297,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  // border-bottom: 1px solid $darkerBlue;
 }
 
 .posts > .post:last-child {
@@ -267,14 +321,39 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
+    color: $red;
+    font-weight: 700;
+    margin-bottom: 80px;
+    &:hover, &:active {
+      color: $white;
+      opacity: 1;
+    }
   }
+}
+
+img + em { 
+  font-size: 12px;
+  color: $white;
+  opacity: .7;
+  margin-top: -10px;
+  display: block;
+}
+
+.footnotes {
+  font-size: 14px;
+  opacity: .7;
+}
+
+.footnote {
+  font-size: 12px;
+  vertical-align: top;
 }
 
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  // border-bottom: 1px solid #ddd;
   background-color: $lightGray;
 }
 
