@@ -20,6 +20,7 @@ In my time at Badger I have:
 - Designed strategy around supporting our product with incredibly talented online support reps from the Philippines
 - Designed an SEO strategy that brought us from a handful of signups a week to a thousand for a niche product category
 - Built out a team of content writers as well as our workflow for building out thousands of pages for this SEO strategy
+- Built out our analytics implementation using best practices to measure conversion rates from different traffic sources
 
 ### Contact me
 
