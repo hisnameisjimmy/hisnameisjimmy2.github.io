@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-post-title, .front-page-content h1 {
   opacity: .6;
-  font-size: 22px;
+  font-size: 34px;
 }
 
 .front-page-content p {
@@ -148,6 +148,8 @@ img {
   font-style: italic;
   color: $white;
   opacity: .5;
+  font-size: 12px;
+  margin: 40px 0 200px;
 }
 
 // Specify the color of the selection
@@ -321,12 +323,17 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-size: 12px;
-    color: $red;
+    font-size: 16px;
+    color: #E7695C;
     font-weight: 700;
     margin-bottom: 80px;
+    padding: 5px 10px;
+    background: #2b4a65;
+    margin-top: 10px;
+    display: inline-block;
+    opacity: .6;
+    transition: all 0.2s ease-in-out;
     &:hover, &:active {
-      color: $white;
       opacity: 1;
     }
   }
@@ -347,7 +354,18 @@ img + em {
 
 .footnote {
   font-size: 12px;
-  vertical-align: top;
+  padding: 0 10px;
+  margin: 0 5px;
+  border-radius: 10px;
+  background-color: #5988b1;
+  color: #325778;
+  transition: background-color;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  &:hover {
+    background-color: #1F3D57;
+  }
 }
 
 .wrapper-footer {
