@@ -50,17 +50,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.blog-post-title, .front-page-content h1 {
+h1.blog-post-title, .front-page-content h1 {
   opacity: .6;
   font-size: 34px;
 }
 
 .front-page-content p {
   opacity: .8;
-}
-
-.front-page-content h1:hover {
-  opacity: 1;
 }
 
 h1 {
@@ -326,7 +322,6 @@ nav {
     font-size: 16px;
     color: #E7695C;
     font-weight: 700;
-    margin-bottom: 80px;
     padding: 5px 10px;
     background: #2b4a65;
     margin-top: 10px;
@@ -370,9 +365,7 @@ img + em {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  // border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: #1F3D57;
 }
 
 footer {

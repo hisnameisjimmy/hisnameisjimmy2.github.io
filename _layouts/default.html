@@ -10,8 +10,11 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900|Open+Sans:400,700" rel="stylesheet">
+
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -33,10 +36,7 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-            
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
+          
         </header>
       </div>
     </div>
@@ -44,6 +44,19 @@
     <div id="main" role="main" class="container front-page-content">
       {{ content }}
     </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+            <a href="{{ site.baseurl }}/about">About</a>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/littlefoot/dist/littlefoot.min.js" type="application/javascript"></script>
+    <script type="application/javascript">
+      littlefoot.default()
+    </script>
 
     {% include analytics.html %}
   </body>
