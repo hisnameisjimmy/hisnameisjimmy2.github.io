@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Badger Maps - Design Work
+title: Design work for Badger Maps
+excerpt: Work from Badger Maps, including iOS, Android, Responsive Web, Logo, and more.
 permalink: /portfolio/badger-maps
+featured-image: images/badger-logo-before-after.png
 ---
 
 ## Badger Maps
