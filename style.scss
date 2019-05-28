@@ -115,7 +115,7 @@ ul {
   list-style-type: disc;
 }
 
-ul li {
+ul li, ol li {
   opacity: .8;
 }
 
@@ -140,13 +140,7 @@ strong, b {
 }
 
 img {
-  max-width: 120%;
-  margin: 20px 0;
-  margin-left: -10%;
-  @include mobile {
-    max-width: 100%;
-    margin-left: auto;
-  }
+  width: 100%;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -267,7 +261,7 @@ img {
   color: $red;
   font-size: 16px;
   opacity: .8;
-
+  font-weight: 600;
   @include mobile {
     margin: 3px 0;
   }
@@ -348,12 +342,30 @@ nav {
   }
 }
 
+img {
+  opacity: 1;
+}
+
 img + em { 
   font-size: 12px;
   color: $white;
   opacity: .7;
   margin-top: -10px;
   display: block;
+}
+
+figure.image {
+  width: 120%;
+  background: #25445f;
+  margin-left: -10%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.image figcaption {
+    padding: 10px 10px 15px 15px;
+    opacity: .8;
+    font-size: 14px;
 }
 
 .footnotes {
@@ -392,6 +404,7 @@ footer a {
   font-weight: 600;
   font-size: 14px;
   opacity: .8;
+  padding: 0 20px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

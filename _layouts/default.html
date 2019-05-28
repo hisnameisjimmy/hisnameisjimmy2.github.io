@@ -10,9 +10,10 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+    <link rel="stylesheet" type="text/css" href="/js/bigfoot-default.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900|Open+Sans:400,700" rel="stylesheet">
+    <script src="/js/scrollreveal.js" type="application/javascript"></script>
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -48,14 +49,26 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
+            <a href="{{ site.baseurl }}">Writing</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
         </footer>
       </div>
     </div>
-
-    <script src="https://unpkg.com/littlefoot/dist/littlefoot.min.js" type="application/javascript"></script>
+    <script src="/js/jquery-2.2.4.min.js" type="application/javascript"></script>
+    <script src="/js/bigfoot.min.js" type="application/javascript"></script>
+    
     <script type="application/javascript">
-      littlefoot.default()
+      $.bigfoot();
+
+      var slideUp = {
+          distance: '10%',
+          origin: 'bottom',
+          opacity: 0,
+          delay: 150
+      };
+
+      ScrollReveal().reveal('.animate-on-scroll', slideUp);
     </script>
 
     {% include analytics.html %}
