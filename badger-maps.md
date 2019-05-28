@@ -5,7 +5,7 @@ permalink: /portfolio/badger-maps
 ---
 
 ## Badger Maps
-While at Badger I designed and implemented a responsive webapp, a native iOS app, and a native Android app. I also revamped the logo, helped implement a brand identity along with another designer, created plenty of collateral, and more. Here's a little sampling.
+While at Badger I designed and implemented (wrote the templating, html, css, and interaction javascript) a responsive webapp, a native iOS app, and a native Android app. I also revamped the logo, helped implement a brand identity along with another designer, created plenty of collateral, and more. Here's a little sampling.
 
 Badger is a unique application in that its primary interface is a map. Badger ostensibly works as a light weight CRM for outside sales professionals, so being able to spatially reason with where your customers are is paramount. There are few applications out there that are able to layer on a lot of data on top of a map while still making it feel easy to use. Our customers were sales people and had zero patience for an application that felt difficult. Usability was key.
 
@@ -24,11 +24,13 @@ Our web application started as a rough sketch but contained some devices that wo
 
 
 #### Mobile metaphor
-With mobile, I wanted a metaphor where each state felt straight forward to the user without having to think about it. In order to incorporate the webapp with as few modifications as possible, I came up with a way for the windows to be structured in a way that felt familiar to iOS/Android users while keeping modifications to CSS just to things like height.
+With mobile, I wanted a metaphor where each state felt straight forward to the user without having to think about it. In order to incorporate the webapp with as few modifications as possible, I came up with a way for the windows to be structured in a way that felt familiar to iOS/Android users while keeping modifications to CSS just to things like height (aside from the menu which had so many differences as to require a different component on mobile).
 
 1. Base State (The map is the primary interaction mechanism)
 2. Menu State (A menu button has been tapped. All menu items are accessible.)
 3. Detail State (Account detail is being viewed, it must be closed before menu is accessible)
+
+{% include image.html url="/images/badger-webapp-desktop-wireframe.png" description="Here is the desktop view broken down into it's main structural components. On the next image, you can see how these components collapsed for mobile." %}
 
 {% include image.html url="/images/badger-webapp-mobile-metaphor-wireframe.png" description="The wireframe broke down the app design structure into three main states: Base, Menu Selected, and Detail. Detail is only triggered when an item inside a selected-menu view needed to expand to another view." %}
 
