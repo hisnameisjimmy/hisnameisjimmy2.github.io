@@ -367,6 +367,10 @@ figure.image {
   margin-left: -10%;
   margin-bottom: 40px;
   margin-top: 40px;
+  @include mobile {
+    margin-left: unset;
+    width: 100%;
+  }
 }
 
 .image figcaption {
