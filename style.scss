@@ -25,6 +25,13 @@ body {
 	background: $blue;
   font: 18px/1.4 $openSans;
   color: $white;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main {
+  flex: 1;
 }
 
 .container {
