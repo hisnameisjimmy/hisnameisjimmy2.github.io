@@ -11,10 +11,14 @@ While at Badger I designed and implemented (wrote the templating, html, css, and
 
 Badger is a unique application in that its primary interface is a map. Badger ostensibly works as a light weight CRM for outside sales professionals, so being able to spatially reason with where your customers are is paramount. There are few applications out there that are able to layer on a lot of data on top of a map while still making it feel easy to use. Our customers were sales people and had zero patience for an application that felt difficult. Usability was key.
 
+### iOS
+
+{% include image.html url="/images/badger-ios-transition.png" description="Our iOS app through the sands of time (or iOS versions, if you will)" %}
+
 ### Responsive Web Application
 Early on at Badger we created an MVP that allowed people to pay for and use the application but was otherwise not thoroughly designed. This changed about two years in when I designed and implemented an interface that would allow us to have a much more coherent approach to the web application that collapsed with very, very little code to mobile. This design has carried us for four years, allowing us to adapt to new features and additions with very little trouble.
 
-#### Webapp Evolution
+### Webapp Evolution
 
 Our web application started as a rough sketch but contained some devices that would end up being carried through to the final design that we work with today. While the menu and overall structure and layout were heavily altered, certain areas like the route list remained largely the same. 
 
@@ -25,7 +29,7 @@ Our web application started as a rough sketch but contained some devices that wo
 {% include image.html url="/images/badger-webapp-desktop-current.png" description="When the limits of the original design were reached, I went back to the drawing board and redesigned the app around a 'pane' metaphor, with a menu state on the left and a detail state on the right. This allowed the map to stay front and center." %}
 
 
-#### Mobile metaphor
+### Mobile metaphor
 With mobile, I wanted a metaphor where each state felt straight forward to the user without having to think about it. In order to incorporate the webapp with as few modifications as possible, I came up with a way for the windows to be structured in a way that felt familiar to iOS/Android users while keeping modifications to CSS just to things like height (aside from the menu which had so many differences as to require a different component on mobile).
 
 1. Base State (The map is the primary interaction mechanism)
@@ -51,4 +55,6 @@ A few goals I had:
 
 {% include image.html url="/images/badger-logo-before-after-with-points.png" description="Point reduction, simplification, and consistency makes for a technically easier to work with product." %}
 
-{% include image.html url="/images/badger-logo-three-styles.png" description="Improvements in being able to go black and white" %}
+{% include image.html url="/images/badger-logo-three-styles-before.png" description="Original versions highlighting problems when going black and white" %}
+
+{% include image.html url="/images/badger-logo-three-styles-after.png" description="Improvements in being able to go black and white" %}
