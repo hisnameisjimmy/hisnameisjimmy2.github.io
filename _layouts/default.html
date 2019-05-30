@@ -50,7 +50,7 @@
     <script src="/js/bigfoot.min.js" type="application/javascript"></script>
     <script src="/js/jquery.fancybox.min.js" type="application/javascript"></script>
     
-    <script type="application/javascript">
+    <script type="text/javascript">
       $.bigfoot();
 
       var slideUp = {
@@ -61,6 +61,12 @@
       };
 
       ScrollReveal().reveal('.animate-on-scroll', slideUp);
+
+      $( '[data-fancybox]' ).fancybox({
+        caption : function( instance, item ) {
+          return $(this).closest('figure').find('figcaption').html();
+        }
+      });
     </script>
 
     {% include analytics.html %}
