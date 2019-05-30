@@ -13,9 +13,21 @@ Badger is a unique application in that its primary interface is a map. Badger os
 
 ### iOS
 
+iOS is our most important platform in America. With thousands of customers utilizing it every day, it has to expose features easily and be very easy to use. It has to flow. iOS designs have fed back to our webapp designs more than the other way around. By making things easy to use on a phone, we were able to translate that more easily to the desktop. 
+
+Our most consequential screens on iOS are the map, the calendar, account detail, route mode, and the route list. These places are where the bulk of interaction occurs and needs to be refined, quick to use, and obvious.
+
+Certain screens like route-mode deserve more explanation. When our customers built optimized routes, they almost had an experience of 'now what?'.
+
+{% include image.html url="/images/badger-ios-screens.png" description="The most consequential screens on iOS" %}
+
 {% include image.html url="/images/badger-ios-transition.png" description="Our iOS app through the sands of time (or iOS versions, if you will)" %}
 
 ### Android
+
+Android was developed much later than iOS due to the expense of building it and the lower demand. Primarily we've seen demand for Android from abroad where teams being onboarded needed native app support. As such, we were able to build upon all the workflows and designs that we had matured under iOS. The primary difference was that Android had to feel like Android. This could be both subtle and overt.
+
+Our most consequential screens are similar to iOS and are where the bulk of interaction occurs for our customers. 
 
 {% include image.html url="/images/badger-android-screens.png" description="The most consequential screens on Android" %}
 
@@ -32,6 +44,15 @@ Our web application started as a rough sketch but contained some devices that wo
 
 {% include image.html url="/images/badger-webapp-desktop-current.png" description="When the limits of the original design were reached, I went back to the drawing board and redesigned the app around a 'pane' metaphor, with a menu state on the left and a detail state on the right. This allowed the map to stay front and center." %}
 
+#### Webapp Feature Dive
+
+The route list is our most important feature in the app, and also our most complex.
+
+{% include image.html url="/images/badger-webapp-routes.png" description="The routes base-state invites you to get going and provides an insanely simple point-of-entry: a single button" %}
+
+{% include image.html url="/images/badger-webapp-route-add.png" description="Tapping the button reveals a simple popover-like interface that is easy to quickly select accounts from" %}
+
+{% include image.html url="/images/badger-webapp-route-filled.png" description="Once the route is filled, you are presented with many more options like adjusting the duration, time, and stop-order of the route." %}
 
 ### Mobile metaphor
 With mobile, I wanted a metaphor where each state felt straight forward to the user without having to think about it. In order to incorporate the webapp with as few modifications as possible, I came up with a way for the windows to be structured in a way that felt familiar to iOS/Android users while keeping modifications to CSS just to things like height (aside from the menu which had so many differences as to require a different component on mobile).
