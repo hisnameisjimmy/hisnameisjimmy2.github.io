@@ -12,6 +12,9 @@ description: Writing and other regrettable decisions
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
+
+include: ['_pages']
+
 #
 # Flags below are optional
 #
