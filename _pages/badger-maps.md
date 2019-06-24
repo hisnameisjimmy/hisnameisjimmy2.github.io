@@ -3,12 +3,14 @@ layout: page
 title: Design work for Badger Maps
 excerpt: Work from Badger Maps, including iOS, Android, Responsive Web, Logo, and more.
 permalink: /portfolio/badger-maps
-featured-image: images/badger-logo-before-after.png
+featured-image: images/badger-main-image.png
 ---
+
+{% include image-header.html url="/images/badger-main-image.png" description="Design for Badger Maps" %}
 
 While at Badger, I've worn as many hats as I can handle. That's kinda the point of a startup right? However, some of my biggest contributions have been on design. I'm incredibly proud of how easy to use our application is while being very strongly and precisely designed.
 
-Badger is a unique application in that its primary interface is a map. Badger ostensibly works as a light weight CRM for outside sales professionals, so being able to spatially reason with your customers is paramount. There are few applications out there that are able to layer on a lot of data on top of a map while still making it feel easy to use. Our customers were sales people and had zero patience for an application that felt difficult. Usability was key.
+Badger is a unique application in that its primary interface is a map. At a high-level Badger works as a light weight CRM for outside sales professionals, so being able to spatially reason with your customers is very important. There are few applications out there that are able to layer data on a map while still making it feel easy to use. Our customers were sales people and had zero patience for an application that felt difficult. Usability was key.
 
 Here is the result.
 

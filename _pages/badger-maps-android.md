@@ -14,7 +14,7 @@ There were a few reasons for this:
 
 {% include image.html url="/images/badger-android-screens.png" description="Our primary Android screens" %}
 
-Eventually, we had customers come knocking that demanded feature parity with iOS and we said "Please lean on the pen". 
+Eventually, we had larger team customers come knocking that demanded feature parity with iOS and we got to work.
 
 ## Design Differences
 
@@ -32,4 +32,4 @@ Visually though? Here are some good side-by-side examples:
 
 {% include image.html url="/images/badger-ios-android-difference-route.png" description="Differences between the route list screens" %}
 
-Is it mindblowing? No. But it feels at home.
+The goal was a application that worked like the iOS application, but felt home on Android. I think we nailed it.
