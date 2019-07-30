@@ -1,3 +1,4 @@
 <figure class="image animate-on-scroll load-hidden">
   <img src="{{ include.url }}" alt="{{ include.description }}">
+  {% if include.description %}<figcaption class="caption">{{ include.description }}</figcaption>{% endif %}
 </figure>

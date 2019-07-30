@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Design work for Badger Maps
-excerpt: Work from Badger Maps, including iOS, Android, Responsive Web, Logo, and more.
+title: Badger Maps
+excerpt: Branding, iPhone, iPad, Android, and Responsive Web
 permalink: /portfolio/badger-maps
-featured-image: images/badger-main-image.png
+featured-image: /images/badger-main-image.png
+callout-image: /images/badger-logomark-whiteborder-square--large.png
 ---
 
 {% include image-header.html url="/images/badger-main-image.png" description="Design for Badger Maps" %}

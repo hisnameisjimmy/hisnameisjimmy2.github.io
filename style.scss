@@ -23,7 +23,8 @@ html {
 
 body {
   font: 18px/1.4 $openSans;
-  color: $white;
+  color: $black;
+  background: #f5f8fb;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -66,6 +67,9 @@ h1 {
       // opacity: 1;
     }
   }
+  @include mobile {
+    font-size: 26px;
+  }
 }
 
 .masthead h1 {
@@ -85,10 +89,11 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 30px 0;
   color: $black;
   opacity: .8;
   max-width: 600px;
+  line-height: 1.58;
 }
 
 a {
@@ -124,6 +129,7 @@ ul {
 
 ul li, ol li {
   opacity: .8;
+  line-height: 1.58;
 }
 
 ol {
@@ -194,15 +200,16 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
 }
 
 .masthead {
   padding: 20px 0;
   // border-bottom: 1px solid $darkerBlue;
-
+  display: flex;
+  align-items: center;
   @include mobile {
     text-align: center;
+    flex-direction: column;
   }
 }
 
@@ -240,6 +247,7 @@ img {
 .site-name {
   margin: 0;
   cursor: pointer;
+  line-height: 48px;
   // color: $red;
   // text-shadow: 2px 2px 0px $blue;
   color: $blue;
@@ -247,26 +255,47 @@ img {
   font-family: $nunitoSans;
   letter-spacing: 1px;
   font-weight: 900;
+  @include mobile {
+
+  }
+}
+
+.site-name-link {
+  display: flex;
+  flex-direction: column;
+  @include mobile {
+    flex-direction: row;
+  }
 }
 
 .site-name.mod-first {
   font-size: 32px;
+  font-weight: 700;
   @include mobile {
-    font-size: 16px;
+    font-size: 26px;
+    font-weight: 900;
+    margin-right: 10px;
+    margin-left: auto;
   }
 }
 
 .site-name.mod-second {
-  font-size: 32px;
+  font-size: 84px;
+  text-shadow: 3px 3px 0px $red;
+  margin-left: -5px;
   @include mobile {
-    font-size: 16px;
+    font-size: 26px;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px $red;
+    margin-right: auto;
+    margin-left: unset;
   }
 }
 
 .site-description {
   color: $blue;
   font-size: 14px;
-  margin: 0;
+  margin: 10px 0;
   opacity: .6;
   font-weight: 400;
   @include mobile {
@@ -275,7 +304,6 @@ img {
 }
 
 nav {
-  float: left;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $nunitoSans;
   font-size: 16px;
@@ -295,11 +323,9 @@ nav {
     font-weight: 700;
     letter-spacing: -1px;
     text-transform: uppercase;
-
     @include mobile {
       margin: 0 10px;
       color: $red;
-      
     }
   }
 }
@@ -328,6 +354,70 @@ nav {
     font-style: italic;
   }
 
+.portfolio-content-small h2 {
+  @include mobile {
+    margin-top: 0;
+  }
+}
+
+.portfolio-content-small p {
+  @include mobile {
+    margin-top: 0;
+  }
+}
+
+.portfolio-callout {
+  width: 200px;
+  height: 200px;
+  @include mobile {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+  .front-page-link {
+    transition: all .25s ease-in-out;
+    display: block;
+    border-radius: 2px;
+    padding: 30px;
+    width: 90%;
+    margin-left: -30px;
+    &:hover {
+      box-shadow: 0 0 24px -2px rgba(0,0,0,.2);
+      background: $white;
+    }
+    @include mobile {
+      margin-left: unset;
+      width: 100%;
+    }
+  }
+
+  .front-page-link.mod-portfolio {
+    display: flex;
+    width: 100%;
+    @include mobile {
+      padding: 10px 0;
+    }
+  }
+
+  .front-page-link figure.image {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  a.front-page-link {
+    color: $black;
+  }
+
+  a.front-page-link:hover > .read-more {
+    background: #E7695C;
+    color: #2b4a65;
+  }
+
+  .front-page-link h1 {
+    margin-top: 0;
+  }
+
   .comments {
     margin-top: 10px;
   }
@@ -341,11 +431,6 @@ nav {
     background: #2b4a65;
     margin-top: 10px;
     display: inline-block;
-    opacity: .6;
-    transition: all 0.2s ease-in-out;
-    &:hover, &:active {
-      opacity: 1;
-    }
   }
 }
 
@@ -376,8 +461,13 @@ figure.image {
     padding: 10px 10px 15px 15px;
     opacity: .8;
     font-size: 14px;
-    background: #d9d8d8;
-    color: $black;
+    text-align: center;
+    color: #777777;
+    width: 60%;
+    margin: 0 auto;
+    @include mobile {
+      width: 90%;
+    }
 }
 
 .footnotes {

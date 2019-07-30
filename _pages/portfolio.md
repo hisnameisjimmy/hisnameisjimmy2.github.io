@@ -9,11 +9,15 @@ permalink: /portfolio/
 While at Badger I designed and implemented a responsive webapp, a native iOS app, and a native Android app. I also revamped the logo, helped implement a brand identity along with another designer, created plenty of collateral, and more. Here's a little sampling. -->
 
 {% for portfolio in site.portfolio %}
-  <h2>
-    <a href="{{ portfolio.url }}">
-      {{ portfolio.title }}
+<article class="post">
+    <a class="front-page-link mod-portfolio" href="{{ site.baseurl }}{{ portfolio.url }}">
+        <img class="portfolio-callout" src="{{ portfolio.callout-image }}">
+        <div class="portfolio-content-small">
+            <h2>{{ portfolio.title }}</h2>
+            <p>{{ portfolio.excerpt }}</p>
+        </div>
     </a>
-  </h2>
+</article>
 {% endfor %}
 
 {% include portfolio.html image-url="/images/badger-main-image.png" description="Design for Badger Maps" piece-title="whaaat" piece-date="2017" %}
