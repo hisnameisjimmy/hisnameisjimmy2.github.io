@@ -21,7 +21,7 @@ Recently, a number of thoughtful articles have been written on what is now a big
 - [Everyone Is Canceled](https://www.nytimes.com/2018/06/28/style/is-it-canceled.html)
 - [Shame Storm](https://www.firstthings.com/article/2019/01/shame-storm)
 
-The mob wants justice and it wants public executions. You're a seventeen year-old kid? Too bad, you are a monster now. The President and you had a tryst? Sorry, you're a slut and the butt of jokes for life. It was just a joke? Actually, you are a racist. The human desire for blood-lust hasn't abated, it has just changed form. 
+The mob wants justice and it wants public executions. You're a seventeen year-old kid? Too bad, you are a monster now. The President and you had a tryst? Sorry, you're a slut and the butt of jokes for life. The human desire for blood-lust hasn't abated, it has just changed form. 
 
 So why post at all? Why voice any opinions in such a dangerous environment?
 

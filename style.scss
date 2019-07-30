@@ -22,7 +22,6 @@ html {
 }
 
 body {
-	background: $blue;
   font: 18px/1.4 $openSans;
   color: $white;
   display: flex;
@@ -45,7 +44,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $openSans;
-  color: $white;
+  color: $black;
   font-weight: bold;
 
   line-height: 1.7;
@@ -58,13 +57,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  opacity: .6;
+  opacity: .9;
   font-size: 34px;
   a {
     color: inherit;
     &:hover, &:active {
-      color: $white;
-      opacity: 1;
+      // color: $white;
+      // opacity: 1;
     }
   }
 }
@@ -87,7 +86,7 @@ h4 {
 
 p {
   margin: 15px 0;
-  color: $white;
+  color: $black;
   opacity: .8;
   max-width: 600px;
 }
@@ -240,36 +239,36 @@ img {
 
 .site-name {
   margin: 0;
-  color: $red;
   cursor: pointer;
+  // color: $red;
+  // text-shadow: 2px 2px 0px $blue;
+  color: $blue;
+  text-shadow: 2px 2px 0px $red;
   font-family: $nunitoSans;
   letter-spacing: 1px;
+  font-weight: 900;
 }
 
 .site-name.mod-first {
-  font-weight: 700;
-  font-size: 28px;
+  font-size: 32px;
   @include mobile {
     font-size: 16px;
   }
 }
 
 .site-name.mod-second {
-  font-weight: 900;
-  font-size: 120px;
-  line-height: 100px;
-  margin-left: -8px;
+  font-size: 32px;
   @include mobile {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 16px;
   }
 }
 
 .site-description {
-  color: $red;
-  font-size: 16px;
-  opacity: .8;
-  font-weight: 600;
+  color: $blue;
+  font-size: 14px;
+  margin: 0;
+  opacity: .6;
+  font-weight: 400;
   @include mobile {
     margin: 3px 0;
   }
@@ -364,7 +363,6 @@ img + em {
 
 figure.image {
   width: 120%;
-  background: #25445f;
   margin-left: -10%;
   margin-bottom: 40px;
   margin-top: 40px;
@@ -378,6 +376,8 @@ figure.image {
     padding: 10px 10px 15px 15px;
     opacity: .8;
     font-size: 14px;
+    background: #d9d8d8;
+    color: $black;
 }
 
 .footnotes {
@@ -403,7 +403,6 @@ figure.image {
 
 .wrapper-footer {
   margin-top: 50px;
-  background-color: #1F3D57;
 }
 
 footer {
@@ -421,6 +420,18 @@ footer a {
 
 html.sr .load-hidden {
     visibility: hidden;
+}
+
+.portfolio-chunk {
+  display: flex;
+}
+
+.portfolio-chunk-words {
+  
+}
+
+.portfolio-chunk-image {
+  
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
