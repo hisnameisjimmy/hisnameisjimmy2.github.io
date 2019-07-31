@@ -399,6 +399,7 @@ a.shadow-link:hover > .read-more {
     font-size: 22px;
     font-style: italic;
   }
+}
 
 .portfolio-content-small h2 {
   @include mobile {
@@ -425,16 +426,27 @@ a.shadow-link:hover > .read-more {
     margin-top: 10px;
   }
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #E7695C;
-    font-weight: 700;
-    padding: 5px 10px;
-    background: #2b4a65;
-    margin-top: 10px;
-    display: inline-block;
+.button-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  // color: #E7695C;
+  font-weight: 700;
+  padding: 5px 10px;
+  // background: #2b4a65;
+  background: $red;
+  color: $blue;
+  margin-top: 10px;
+  display: inline-block;
+  transition: all .25s ease-in-out;
+  &:hover {
+    background: $blue;
+    color: $red;
   }
+}
+
+.prevnext {
+  display: flex;
+  justify-content: space-between;
 }
 
 img {
