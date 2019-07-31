@@ -7,7 +7,7 @@ title: Writing and other regrettable decisions
   {% for post in site.posts %}
     
     <article class="post">
-        <a class="front-page-link" href="{{ site.baseurl }}{{ post.url }}">
+        <a class="shadow-link mod-front-page" href="{{ site.baseurl }}{{ post.url }}">
             <h1>{{ post.title }}</h1>
             <div class="entry">
                 <p>{{ post.content | truncatewords:75 }}</p>

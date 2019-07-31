@@ -8,9 +8,10 @@ permalink: /portfolio/
 ### 2013-2019
 While at Badger I designed and implemented a responsive webapp, a native iOS app, and a native Android app. I also revamped the logo, helped implement a brand identity along with another designer, created plenty of collateral, and more. Here's a little sampling. -->
 
-{% for portfolio in site.portfolio %}
+{% assign items = site.portfolio | sort: 'date' %}
+{% for portfolio in site.portfolio reversed %}
 <article class="post">
-    <a class="front-page-link mod-portfolio" href="{{ site.baseurl }}{{ portfolio.url }}">
+    <a class="shadow-link mod-portfolio" href="{{ site.baseurl }}{{ portfolio.url }}">
         <img class="portfolio-callout" src="{{ portfolio.callout-image }}">
         <div class="portfolio-content-small">
             <h2>{{ portfolio.title }}</h2>

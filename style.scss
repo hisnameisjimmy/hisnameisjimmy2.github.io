@@ -344,6 +344,52 @@ nav {
   border-bottom: none;
 }
 
+.shadow-link {
+  transition: all .25s ease-in-out;
+  display: block;
+  border-radius: 2px;
+  padding: 30px;
+  &:hover {
+    box-shadow: 0 0 24px -2px rgba(0,0,0,.2);
+    background: $white;
+  }
+}
+
+.shadow-link.mod-front-page {
+  width: 90%;
+  margin-left: -30px;
+  @include mobile {
+    margin-left: unset;
+    width: 100%;
+  }
+}
+
+.shadow-link.mod-portfolio {
+  display: flex;
+  width: 100%;
+  @include mobile {
+    padding: 10px 0;
+  }
+}
+
+.shadow-link figure.image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a.shadow-link {
+  color: $black;
+}
+
+a.shadow-link:hover > .read-more {
+  background: #E7695C;
+  color: #2b4a65;
+}
+
+.shadow-link h1 {
+  margin-top: 0;
+}
+
 .post {
   blockquote {
     margin: 1.8em .8em;
@@ -374,49 +420,6 @@ nav {
     height: 100px;
   }
 }
-
-  .front-page-link {
-    transition: all .25s ease-in-out;
-    display: block;
-    border-radius: 2px;
-    padding: 30px;
-    width: 90%;
-    margin-left: -30px;
-    &:hover {
-      box-shadow: 0 0 24px -2px rgba(0,0,0,.2);
-      background: $white;
-    }
-    @include mobile {
-      margin-left: unset;
-      width: 100%;
-    }
-  }
-
-  .front-page-link.mod-portfolio {
-    display: flex;
-    width: 100%;
-    @include mobile {
-      padding: 10px 0;
-    }
-  }
-
-  .front-page-link figure.image {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  a.front-page-link {
-    color: $black;
-  }
-
-  a.front-page-link:hover > .read-more {
-    background: #E7695C;
-    color: #2b4a65;
-  }
-
-  .front-page-link h1 {
-    margin-top: 0;
-  }
 
   .comments {
     margin-top: 10px;

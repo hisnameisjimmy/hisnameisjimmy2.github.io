@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Badger Maps
+date: 2019-03-23T10:20:00Z
 excerpt: Branding, iPhone, iPad, Android, and Responsive Web
 permalink: /portfolio/badger-maps
 featured-image: /images/badger-main-image.png
