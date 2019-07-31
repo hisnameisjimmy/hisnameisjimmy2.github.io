@@ -22,9 +22,9 @@ html {
 }
 
 body {
-	background: $blue;
   font: 18px/1.4 $openSans;
-  color: $white;
+  color: $black;
+  background: #f5f8fb;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -45,7 +45,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $openSans;
-  color: $white;
+  color: $black;
   font-weight: bold;
 
   line-height: 1.7;
@@ -58,14 +58,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  opacity: .6;
+  opacity: .9;
   font-size: 34px;
   a {
     color: inherit;
     &:hover, &:active {
-      color: $white;
-      opacity: 1;
+      // color: $white;
+      // opacity: 1;
     }
+  }
+  @include mobile {
+    font-size: 26px;
   }
 }
 
@@ -86,10 +89,11 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
-  color: $white;
+  margin: 30px 0;
+  color: $black;
   opacity: .8;
   max-width: 600px;
+  line-height: 1.58;
 }
 
 a {
@@ -125,6 +129,7 @@ ul {
 
 ul li, ol li {
   opacity: .8;
+  line-height: 1.58;
 }
 
 ol {
@@ -195,15 +200,16 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
 }
 
 .masthead {
   padding: 20px 0;
   // border-bottom: 1px solid $darkerBlue;
-
+  display: flex;
+  align-items: center;
   @include mobile {
     text-align: center;
+    flex-direction: column;
   }
 }
 
@@ -240,43 +246,64 @@ img {
 
 .site-name {
   margin: 0;
-  color: $red;
   cursor: pointer;
+  line-height: 48px;
+  // color: $red;
+  // text-shadow: 2px 2px 0px $blue;
+  color: $blue;
+  text-shadow: 2px 2px 0px $red;
   font-family: $nunitoSans;
   letter-spacing: 1px;
+  font-weight: 900;
+  @include mobile {
+
+  }
+}
+
+.site-name-link {
+  display: flex;
+  flex-direction: column;
+  @include mobile {
+    flex-direction: row;
+  }
 }
 
 .site-name.mod-first {
+  font-size: 32px;
   font-weight: 700;
-  font-size: 28px;
   @include mobile {
-    font-size: 16px;
+    font-size: 26px;
+    font-weight: 900;
+    margin-right: 10px;
+    margin-left: auto;
   }
 }
 
 .site-name.mod-second {
-  font-weight: 900;
-  font-size: 120px;
-  line-height: 100px;
-  margin-left: -8px;
+  font-size: 84px;
+  text-shadow: 3px 3px 0px $red;
+  margin-left: -5px;
   @include mobile {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 26px;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px $red;
+    margin-right: auto;
+    margin-left: unset;
   }
 }
 
 .site-description {
-  color: $red;
-  font-size: 16px;
-  opacity: .8;
-  font-weight: 600;
+  color: $blue;
+  font-size: 14px;
+  margin: 10px 0;
+  opacity: .6;
+  font-weight: 400;
   @include mobile {
     margin: 3px 0;
   }
 }
 
 nav {
-  float: left;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $nunitoSans;
   font-size: 16px;
@@ -296,11 +323,9 @@ nav {
     font-weight: 700;
     letter-spacing: -1px;
     text-transform: uppercase;
-
     @include mobile {
       margin: 0 10px;
       color: $red;
-      
     }
   }
 }
@@ -319,6 +344,52 @@ nav {
   border-bottom: none;
 }
 
+.shadow-link {
+  transition: all .25s ease-in-out;
+  display: block;
+  border-radius: 2px;
+  padding: 30px;
+  &:hover {
+    box-shadow: 0 0 24px -2px rgba(0,0,0,.2);
+    background: $white;
+  }
+}
+
+.shadow-link.mod-front-page {
+  width: 90%;
+  margin-left: -30px;
+  @include mobile {
+    margin-left: unset;
+    width: 100%;
+  }
+}
+
+.shadow-link.mod-portfolio {
+  display: flex;
+  width: 100%;
+  @include mobile {
+    padding: 10px 0;
+  }
+}
+
+.shadow-link figure.image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a.shadow-link {
+  color: $black;
+}
+
+a.shadow-link:hover > .read-more {
+  background: #E7695C;
+  color: #2b4a65;
+}
+
+.shadow-link h1 {
+  margin-top: 0;
+}
+
 .post {
   blockquote {
     margin: 1.8em .8em;
@@ -328,6 +399,27 @@ nav {
     font-size: 22px;
     font-style: italic;
   }
+
+.portfolio-content-small h2 {
+  @include mobile {
+    margin-top: 0;
+  }
+}
+
+.portfolio-content-small p {
+  @include mobile {
+    margin-top: 0;
+  }
+}
+
+.portfolio-callout {
+  width: 200px;
+  height: 200px;
+  @include mobile {
+    width: 100px;
+    height: 100px;
+  }
+}
 
   .comments {
     margin-top: 10px;
@@ -342,11 +434,6 @@ nav {
     background: #2b4a65;
     margin-top: 10px;
     display: inline-block;
-    opacity: .6;
-    transition: all 0.2s ease-in-out;
-    &:hover, &:active {
-      opacity: 1;
-    }
   }
 }
 
@@ -364,7 +451,6 @@ img + em {
 
 figure.image {
   width: 120%;
-  background: #25445f;
   margin-left: -10%;
   margin-bottom: 40px;
   margin-top: 40px;
@@ -378,6 +464,13 @@ figure.image {
     padding: 10px 10px 15px 15px;
     opacity: .8;
     font-size: 14px;
+    text-align: center;
+    color: #777777;
+    width: 60%;
+    margin: 0 auto;
+    @include mobile {
+      width: 90%;
+    }
 }
 
 .footnotes {
@@ -403,7 +496,6 @@ figure.image {
 
 .wrapper-footer {
   margin-top: 50px;
-  background-color: #1F3D57;
 }
 
 footer {
@@ -421,6 +513,18 @@ footer a {
 
 html.sr .load-hidden {
     visibility: hidden;
+}
+
+.portfolio-chunk {
+  display: flex;
+}
+
+.portfolio-chunk-words {
+  
+}
+
+.portfolio-chunk-image {
+  
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

@@ -1,19 +1,21 @@
 ---
 layout: default
-title: Jimmy Hooker's inane ramblings
+title: Writing and other regrettable decisions
 ---
 
 <div class="posts">
   {% for post in site.posts %}
+    
     <article class="post">
+        <a class="shadow-link mod-front-page" href="{{ site.baseurl }}{{ post.url }}">
+            <h1>{{ post.title }}</h1>
+            <div class="entry">
+                <p>{{ post.content | truncatewords:75 }}</p>
+            </div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+            <div class="read-more">Read More</div>
+        </a>
     </article>
+
   {% endfor %}
 </div>

@@ -1,7 +1,10 @@
 ---
 layout: post
 title: The Crippling, Imaginary Audience
+featured-image: images/unsplash-davide-ragusa.jpg
 ---
+
+{% include image-header.html url="/images/unsplash-davide-ragusa.jpg" description="Photo by davide ragusa on Unsplash" %}
 
 When I was younger I had multiple websites where I posted often. I didn't care what I wrote because I was just writing for my friends. Doing this improved my writing dramatically. It forced me to focus on who my audience was, have a goal in writing (always write to persuade!), and to write for actual consumption. People I knew actually read my site! Having any audience at all was just fun. 
 
