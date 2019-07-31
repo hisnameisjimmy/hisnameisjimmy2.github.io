@@ -8,7 +8,7 @@ featured-image: /images/pocket-bodhi-header.png
 callout-image: /images/pocket-bodhi-callout.png
 ---
 
-{% include image-header.html url="/images/pocket-bodhi-header.png" description="Pocket Bodhi" %}
+{% include image-header.html url="/images/pocket-bodhi-header.png" %}
 
 Had fun building a concept meditation app for a health conscious hackathon in Palm Springs in 2014.
 
