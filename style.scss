@@ -349,11 +349,11 @@ nav {
 }
 
 .shadow-link {
-  transition: all .25s ease-in-out;
   display: block;
   border-radius: 2px;
-  padding: 30px;
   @include desktop {
+    padding: 30px;
+    transition: all .25s ease-in-out;
     &:hover {
       box-shadow: 0 0 24px -2px rgba(0,0,0,.2);
       background: $white;
@@ -407,6 +407,10 @@ a.shadow-link {
     font-size: 22px;
     font-style: italic;
   }
+}
+
+.portfolio-content-small {
+  flex: 1;
 }
 
 .portfolio-content-small h2 {
