@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rationalizing design
-featured-image: images/unsplash-leonel-fernandez.jpg
+featured-image: images/unsplash-soumik-dey.jpg
 ---
 
 {% include image-header.html url="/images/unsplash-soumik-dey.jpg" description="Photo by Soumik Dey on Unsplash" %}
