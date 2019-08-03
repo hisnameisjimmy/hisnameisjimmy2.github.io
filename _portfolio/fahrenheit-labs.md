@@ -8,7 +8,7 @@ featured-image: /images/fahrenheit-header.png
 callout-image: /images/fahrenheit-callout.png
 ---
 
-{% include image-header.html url="/images/fahrenheit-header.png" description="Pocket Bodhi" %}
+{% include image-header.html url="/images/fahrenheit-header.png" %}
 
 Created a design/brand/website design company with a friend when younger. I'm still proud of this branding.
 
