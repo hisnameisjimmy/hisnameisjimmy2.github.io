@@ -26,7 +26,7 @@ Now, I'm making some assumptions here, but they're based on my own experience as
 
 How do you defend that? How do you justify or rationalize it? 
 
-It reminds me of those little cards that artists put next to their paintings, explaining their intentions. Why is this necessary? Isn't this superfluous? I understand designers are problem solvers, but can it all be explained? Should it all be explained? Further, if you do explain it, isn't it just hindsight analysis? What's the point? Isn't it just performative?
+It reminds me of those little cards that artists put next to their paintings, explaining their intentions. Why is this necessary? Isn't this superfluous? I understand designers are problem solvers, not artists, but can it all be explained? Should it all be explained? Further, if you do explain it, isn't it just hindsight analysis? What's the point? Isn't it just performative?
 
 Another metaphor: Comedy. How do you rationalize or justify a joke? Jokes are forged through judgement and experience. Whether or not they were good is decided by the audience. 
 
