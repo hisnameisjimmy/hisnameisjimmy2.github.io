@@ -12,7 +12,7 @@ Apple really changed this around the time of the iPhone. It was as if suddenly e
 
 So that's awesome right? People finally appreciate designers! However, one big problem I have regarding this nice little seat at the table is defensibility. I know, I know, not a popular thing to say nowadays. Let's explore.
 
-Asana, Notion, Twitter, Google, Pinterest, Yelp, Amazon and many more all have retained their early ancestral structure that have been polished and refined over time. Why? If data was so important to design, shouldn't we have realized those early, non-data-driven approaches were wrong? Shouldn't the data suggest that we do something entirely different? Did the original designer or team just, *gasp*, have a good intuitive sense about things??
+Asana, Twitter, Google, Pinterest, Yelp, Amazon and many more all have retained their early ancestral structure that have been polished and refined over time. Why? If data was so important to design, shouldn't we have realized those early, non-data-driven approaches were wrong? Shouldn't the data suggest that we do something entirely different? Did the original designer or team just, *gasp*, have a good intuitive sense about things??
 
 One thing that really brought this to the forefront of my mind was an article about how [Notion saved itself](https://www.figma.com/blog/design-on-a-deadline-how-notion-pulled-itself-back-from-the-brink-of-failure/) from death. 
 
