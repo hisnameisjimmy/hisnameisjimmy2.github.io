@@ -22,9 +22,11 @@ Ivan talks about how he spent upwards of 18 hours a day designing. When you are 
 
 I know. *Feelings*. Damn. 
 
-Now, I'm making some assumptions here, but they're based on my own experience as well. We, as designers, sometimes just *know* that something is good. It feels good. We design a ton of versions, and through exposing that design to both our and our teammates judgement we file off the rough edges, massage it, and finally get to the point where it feels 'inevitable'. 
+We, as designers, sometimes just *know* that something is good. It feels good. We design a ton of versions, and through exposing that design to both our and our teammates judgement we file off the rough edges, massage it, and finally get to the point where it feels 'inevitable'. 
 
 How do you defend that? How do you justify or rationalize it? 
+
+{% include image.html url="/images/unsplash-artist-description-card.jpg" %}
 
 It reminds me of those little cards that artists put next to their paintings, explaining their intentions. Why is this necessary? Isn't this superfluous? I understand designers are problem solvers, not artists, but can it all be explained? Should it all be explained? Further, if you do explain it, isn't it just hindsight analysis? What's the point? Isn't it just performative?
 
