@@ -4,6 +4,7 @@ title: Badger Maps iOS Design
 excerpt: The history of iOS design at Badger
 permalink: /portfolio/badger-maps/badger-maps-ios/
 featured-image: images/badger-ios-screens.png
+breadcrumb: badger-maps-ios
 ---
 
 iOS is our most important client, period. It's been incredible getting feedback and realizing that, given the option, all of our customers would rather never use their computers. 

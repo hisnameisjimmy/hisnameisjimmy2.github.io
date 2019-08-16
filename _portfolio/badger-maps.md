@@ -6,6 +6,7 @@ excerpt: Branding, iPhone, iPad, Android, and Responsive Web
 permalink: /portfolio/badger-maps
 featured-image: /images/badger-main-image.png
 callout-image: /images/badger-logomark-whiteborder-square--large.png
+breadcrumb: badger-maps
 ---
 
 {% include image-header.html url="/images/badger-main-image.png" description="Design for Badger Maps" %}

@@ -46,7 +46,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $openSans;
   color: $black;
-  font-weight: bold;
+  font-weight: 600;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   opacity: .9;
-  font-size: 34px;
+  font-size: 38px;
   a {
     color: inherit;
     &:hover, &:active {
@@ -420,6 +420,7 @@ a.shadow-link {
 }
 
 .portfolio-content-small p {
+  margin-top: 10px;
   @include mobile {
     margin-top: 0;
   }
@@ -553,6 +554,16 @@ html.sr .load-hidden {
 
 .portfolio-chunk-image {
   
+}
+
+.breadcrumbs {
+  margin: 10px 0 50px;
+  color: #859bae;
+  font-size: 14px;
+  text-transform: capitalize;
+  @include mobile {
+    margin: 10px 0;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
