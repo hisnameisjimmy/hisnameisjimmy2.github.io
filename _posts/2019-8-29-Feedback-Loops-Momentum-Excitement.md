@@ -14,11 +14,11 @@ In essence, if something takes a long time, you will avoid it. If it happens qui
 
 The same thing is true of the end-user's experience of the software itself. If they can focus and the software feels fast, they will use it more. The pleasure of using it makes you want to use it more. Craig Mod writes about this beautifully here: [Fast Software, the Best Software](https://craigmod.com/essays/fast_software/)
 
-While reading up on feedback loops I ran across Andrew Certain's explanation of how communication and consensus can cripple the feedback loops that allow software to be developed faster. In order to increase speed at Amazon, Bezos basically said to ditch the idea of avoiding duplication of effort in order to execute faster:
+While reading up on feedback loops I ran across Andrew Certain's explanation of how communication and consensus can cripple the feedback loops that allow software to be developed faster. In order to increase speed at Amazon, Bezos basically said to ditch the idea of avoiding duplication of effort in order to execute faster (read the whole thread!):
 
 <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Part of the reason for Amazon&#39;s incredible success across a staggering array of ventures is our focus on pushing autonomy down as far as possible. Jeff said from the start, &quot;I don&#39;t want to make communication more efficient - I want there to be less communication!&quot;</p>&mdash; Andrew Certain (@tacertain) <a href="https://twitter.com/tacertain/status/1166039964582199297?ref_src=twsrc%5Etfw">August 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The cost of communication, transparency, and consensus was so high that it wasn't worth the effort. It was actually better to get rid of cross-team communication in order to ship new products faster.
+The cost of communication, transparency, and consensus was so high that it wasn't worth the effort. It was actually better to get rid of cross-team communication and heavily segment the application in order to ship new products faster. Werner Vogels, Amazon's CTO goes into more detail here: [Modern Applications at AWS](https://www.allthingsdistributed.com/2019/08/modern-applications-at-aws.html).
 
 This is an almost heretical idea on its face and goes against a core tenant of software development: Don't repeat yourself!
 
