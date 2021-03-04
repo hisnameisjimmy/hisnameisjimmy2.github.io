@@ -8,13 +8,12 @@ This is just a place for me to write about things I've thought a lot about. I ma
 
 ### More Information
 
-Currently VP of Product at [Badger Maps, Inc.](https://www.badgermapping.com)
+Currently Senior PM at [Nylas, Inc](https://www.nylas.com) - A VC backed startup killing it in the API space for email/contacts/calendars.
 
-I helped take the company from four employees and zero customers to millions in ARR, thousands of trial signups a month, and over 45 employees across four countries completely bootstrapped. 
+Previously VP of Product at [Badger Maps, Inc.](https://www.badgermapping.com). A bootstrapped startup I helped take from 4 employees and no product to over $4mm in ARR and 70 employees across multiple countries. Even got to live in Spain for 1.5 years as part of the experience!
 
-As the lead designer, I designed and oversaw development of our applications across the Web, iOS (a universal app), and Android. I'm also a seasoned front-end developer who can both design and implement those designs in HTML/CSS/JS.
-
-As VP of Product, I've driven our roadmap, structured and implemented a sane, event-driven analytics strategy, our deployment workflows, branding, revenue experiements, the support team, our SEO strategy, and more. 
+### Side Projects
+[Art Diario](https://www.artdiario.com) - New, beautifully curated art on your desktop every day. 
 
 I love making practical, easy-to-use products that are a pleasure to use over and over again.
 
